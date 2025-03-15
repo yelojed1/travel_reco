@@ -1,0 +1,117 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+/* Style the links inside the navigation bar */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.nav-links a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text], .search-container button {
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    margin-left: 5px
+}
+
+/* Style the body (Background image) */
+body {
+    background-color: white;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: bottom bottom; /* Centers the background image */
+}
+
+/* Resize the logo image */
+.logo {
+    width: 100px;
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Resize the profile picture to fit within the card */
+.profilePic {
+    width: 100%; /* Make the image take up the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image covers the entire area */
+    border-radius: 50%; /*  Make the image circular */
+}
+
+ /* Three columns side by side */
+ .column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  } 

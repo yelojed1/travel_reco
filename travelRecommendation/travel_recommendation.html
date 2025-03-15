@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>travel recommendand</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+        <h1> <img src="img/logo.webp" alt="travel recommand" class="logo"> </h1>
+        <div class="nav-links">
+            <a href="#home" class="active" onclick="showSection('home')">Home</a>
+            <a href="#about-us" onclick="showSection('about-us')">About Us</a>
+            <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id = "search-input" placeholder="Enter a keyword (temples, countries, beach)">
+            <button type="button" id="search-button">Search</button>
+            <button type="reset" id="reset-button">Reset</button>
+        </div>
+    </div>
+
+    <div id="home" class="section">
+        <h1>Welcome to travel recommand</h1>
+        <h2>Here is our Introduction for the Home Page. Search with the keywords for beaches, temples or countries</h2>
+        <p>Waddle around and explore the best travel destinations around the world.</p>
+        <div id="travel-recommendations"></div> <!-- Add this container to hold search results -->
+    </div>
+
+    <div id="about-us" class="section" style="display:none;">
+        <h1>About Us</h1>
+        <h2>Welcome to our Company! Our mission is to help you see the world. As requested, the search bar is nolonger present</h2>
+        <p>Learn more about travel recommand and our mission to help you explore the world.</p>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="img\profilePic (1).jpg" alt="Jane" class = "profilePic">
+                <div class="container">
+                  <h2>John Doe</h2>
+                  <p class="title">CEO &amp; Founder</p>
+                  <p>I am the CEO</p>
+                  <p>example@example.com</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="img\profilePic (2).jpg" alt="Mike" class = "profilePic">
+                <div class="container">
+                  <h2>Robinette Doe</h2>
+                  <p class="title">Team Lead</p>
+                  <p>I am the Team lead</p>
+                  <p>example@example.com</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="img\profilePic (3).jpg" alt="John" class = "profilePic">
+                <div class="container">
+                  <h2>Doe Doe</h2>
+                  <p class="title">Delivery Head</p>
+                  <p>I deliver heads :) </p>
+                  <p>example@example.com</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+    </div>
+
+    <div id="contact" class="section" style="display:none;">
+        <h1>Contact Us</h1>
+        <h2>As requested, the search bar is nolonger present</h2>
+        <p>(Please dont) Reach out to us with any questions or feedback you have.</p>
+        
+        <form id="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" required></textarea><br><br>
+    
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
